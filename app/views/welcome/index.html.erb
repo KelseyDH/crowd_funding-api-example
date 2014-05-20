@@ -1,0 +1,30 @@
+<script id="campaign-listing-template" type="x-tmpl-mustache">
+
+  <div class="campaign">
+
+  <!-- handlebars calls on methods defined in welcome.js.coffee -->
+    <h2 class="title-container">
+      <a href="http://localhost:3000/api/v1/campaigns/" class="title" data-id="{{id}}">{{title}}
+      </a>
+    </h2>
+    <p>{{details}}</p>
+    <h3>${{target}}</h3>
+    <hr>
+  </div>
+
+</script>
+
+<script id="single-campaign-display" type="x-tmpl-mustache">
+  <a href="javascript:void(0)" class="back">Back</a>
+  <h1>{{title}}</h1>
+  <p>Details: {{details}}</p>
+  <p>Target: ${{target}}</p>
+  <p>End Date: {{end_date}}</p>
+
+</script>
+
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<div id="campaigns"> </div>
+<div id="single-campaign-container"> </div>

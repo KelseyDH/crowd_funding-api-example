@@ -1,0 +1,5 @@
+== Crowdfund.sy API Receiver
+
+Simple Rails app that demonstrates the functionality of the Crowdfund.sy API built here:  https://github.com/KelseyDH/crowd_funding
+
+This app is using <tt>Mustache.js</tt> to sort the JSON coming from the Crowdfund.sy REST API.  To make this test app work, you will need to make sure the Crowdfund.sy app is running first and capable of sending to this app.
